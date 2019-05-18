@@ -11,6 +11,8 @@ public class Magical extends Hero {
 
     @Override
     public void useAbility (Hero[] heroes, Boss boss) {
-
+        for (Hero hero: heroes) {
+            hero.setHit(hero.getHit()+5);
+        }
     }
 }

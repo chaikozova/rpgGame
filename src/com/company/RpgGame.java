@@ -11,7 +11,7 @@ public class RpgGame {
 
     public static void startGame() {
         Hero heros[] = getHeroesMassive();
-        Boss boss = new Boss(700, 50);
+        Boss boss = new Boss(700, 80);
 
         showStatistics(heros, boss);
         while (!isFinish(heros, boss)) {
@@ -96,10 +96,10 @@ public class RpgGame {
 
     private static Hero[] getHeroesMassive() {
         Hero result[] = new Hero[4];
-        result[0] = new Hunter (250,20);
-        result[1] = new Magical(250,20);
-        result[2] = new Warrior(250,20);
-        result[3] = new Doctor(250,20);
+        result[0] = new Hunter (250,10);
+        result[1] = new Magical(250,10);
+        result[2] = new Warrior(250,10);
+        result[3] = new Doctor(250,10);
         return result;
     }
 
